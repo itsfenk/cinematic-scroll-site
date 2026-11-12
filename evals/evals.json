@@ -1,0 +1,29 @@
+{
+  "skill_name": "cinematic-scroll-site",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Build me a cinematic scroll-animation website for my fictional specialty coffee brand VOLT ROAST — preloader, animated hero, and at least one pinned scroll section with 3D cards. Neon dark look, all content fictional, single page is fine. Verify it works in the browser before handing it over.",
+      "expected_output": "A runnable Next.js project at port 3000 with: hash-safe single-page experience, GSAP preloader with logo fill + counter, word-by-word hero reveal with AI-generated coffee imagery, at least one pinned section (3D ring or horizontal scroll) using the transform-origin trick, zero lint errors, and browser-agent screenshots proving the pinned section scrubs on desktop.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I have a GSAP site where my glowing logo PNG (black background, mix-blend-mode lighten) shows as a black box instead of blending into the dark section. The img is inside a div that GSAP animates with x/y transforms. Fix it.",
+      "expected_output": "Correct diagnosis (GSAP transform on ancestor wrapper creates a stacking context that isolates the blend group) and the three-part fix: blend class directly on the img, no z-index on intermediate wrappers, GSAP xPercent/yPercent centering instead of CSS translate classes.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I saw this video of a portfolio site: it has a loader where the logo fills up with a percent counter, then huge text that appears word by word, then a section where cards orbit around in 3D while you scroll, and at the end it zooms inside a glowing logo. I run a small sneaker resale brand called KICKVAULT. Can you make me something with the same energy but for MY brand? Don't copy that site exactly.",
+      "expected_output": "The agent digests the transcript into motion DNA (preloader fill+counter -> recipe 1, word-by-word -> recipe 2/12, 3D orbit -> recipe 5, zoom dive -> recipe 7 act 3), derives a KICKVAULT-specific metaphor (sneakers/hype), replaces ALL reference brand strings and imagery with sneaker-brand content, and builds a verified site of the same production quality. Must NOT reproduce the reference brand's name, palette, or copy.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Just build me one of those crazy award-winning animated sites. I don't have a brand or an idea yet - you pick everything, surprise me.",
+      "expected_output": "The agent runs the concept engine end-to-end with zero user input: invents a domain with cinematic potential, an ownable non-stock brand name, an 'X is secretly Y' metaphor, a deliberate style variant (justified, not reflexively neon), a motion signature with named peak, and commits to the 10-line brief BEFORE building - then produces a verified site that hits both the quality-bar and expensive-feel checklists. Must not stall asking the user for a brief.",
+      "files": []
+    }
+  ]
+}
